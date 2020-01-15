@@ -2,7 +2,7 @@ from selenium import webdriver
 from bs4 import BeautifulSoup, NavigableString
 # Set this path within the quotes to the latest version of ChromeDriver
 # See the readme to download
-driver = webdriver.Chrome(r"chromedriver-path")
+driver = webdriver.Chrome(".\\chromedriver.exe")
 # List words from AWAD line-by-line in file words.txt
 f = open("words.txt", "r")
 words = [x.strip() for x in f.readlines()]
